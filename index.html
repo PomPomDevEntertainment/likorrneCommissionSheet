@@ -12,12 +12,11 @@
     <!-- Disable tap highlight on IE -->
     <meta name="msapplication-tap-highlight" content="no">
 
-    <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-icon-180x180.png">
-    <link href="./assets/favicon.ico" rel="icon">
-
     <title>Likorrne - Feuille de commission</title>
 
     <link href="./assets/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/owl.carousel.css">
+    <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css">
 </head>
 
 <body class="">
@@ -28,12 +27,8 @@
         <header class="white-text-container section-container">
             <div class="text-center">
                 <h1>Likorrne</h1>
+                <img src="./assets/images/likorrne.jpg" class="img-pp" alt="Likorrne's PP" />
                 <p>Minecraft Pack Maker</p>
-                <p>
-                    <a class="fa-icon fa-icon-2x" href="https://twitter.com/likorrne" target="_blank" title="Likorrne on Twitter">
-                        <i class="fa fa-twitter"></i>
-                    </a>
-                </p>
             </div>
         </header>
 
@@ -49,41 +44,32 @@
                         <div class="card-block">
                             <h2>À propos</h2>
                             <div class="row">
-                                <div class="col-md-4">
-                                    <p><img src="./assets/images/likorrne.jpg" class="img-responsive" alt=""></p>
-                                </div>
-                                <div class="col-md-8">
-
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                        consequat.
-                                    </p>
-                                    <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-                                </div>
+                                <p>Hello ! Moi c'est Likorrne, un pack maker français mais aussi un créateur de contenu sur YouTube, je poste régulièrement dès pack sur mon Twitter, je saurais vous faire toutes sortes de texture pack de grande qualité dans
+                                    le professionnalisme le plus complet.
+                                </p>
                             </div>
                         </div>
                     </div>
 
                     <div class="card">
                         <div class="card-block">
-                            <h2>Packs</h2>
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <img img src="./assets/images/likorrne.jpg" class="img-responsive" alt="">
-                                    <h3 class="h5">commission</h3>
-                                    <p>Date 2021</p>
+                            <h2>Packs 16x</h2>
+                            <p><a href="" class="btn btn-primary">Commander un pack 16x16</a></p>
+                            <div class="owl-carousel" id="carousel-16x">
+                                <div class="packShowcase">
+                                    <img src="./assets/images/screen.jpg" alt="1" class="screenshotShowcase" />
+                                    <p class="packName">Nom pack</p>
                                 </div>
-                                <div class="col-md-4">
-                                    <img img src="./assets/images/likorrne.jpg" class="img-responsive" alt="">
-                                    <h3 class="h5">commission</h3>
-                                    <p>Date 2021</p>
+                                <div class="packShowcase">
+                                    <img src="./assets/images/screen.jpg" alt="1" class="screenshotShowcase" />
+                                    <p class="packName">Nom pack</p>
                                 </div>
-                                <div class="col-md-4">
-                                    <img img src="./assets/images/likorrne.jpg" class="img-responsive" alt="">
-                                    <h3 class="h5">commission</h3>
-                                    <p>Date 2021</p>
+                                <div class="packShowcase">
+                                    <img src="./assets/images/screen.jpg" alt="1" class="screenshotShowcase" />
+                                    <p class="packName">Nom pack</p>
                                 </div>
                             </div>
+
                         </div>
                     </div>
 
@@ -130,7 +116,7 @@
                     <p style="color:white">
                         <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
                             <img alt="Licence Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" />
-                        </a> This page built by <a href="https://junkjumper-projects.com" target="_blank">@OMGiTzPomPom</a> is available under the terms of the
+                        </a> This page built by <a href="https://twitter.com/OMGiTzPomPom" target="_blank">@OMGiTzPomPom</a> is available under the terms of the
                         <a rel="license" href="http://creativecommons.org/licenses/by/4.0/" style="color:white"> Creative Commons Attribution 4.0 International License</a>.</p>
                 </div>
             </div>
@@ -157,6 +143,19 @@
 
 -->
     <script type="text/javascript" src="./assets/js/main.js"></script>
+    <script type="text/javascript" src="./assets/js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="./assets/js/owl.carousel.js"></script>
+    <script type="text/javascript" src="./assets/js/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(".owl-carousel").owlCarousel({
+                items: 1,
+                loop: true,
+                margin: 10,
+                autoHeight: true,
+            });
+        });
+    </script>
 </body>
 
 </html>
