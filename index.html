@@ -17,6 +17,7 @@
     <link href="./assets/css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/owl.carousel.css">
     <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./assets/css/fontawesome.css">
 </head>
 
 <body class="">
@@ -64,10 +65,6 @@
                                     <img src="./assets/images/screen.jpg" alt="1" class="screenshotShowcase" />
                                     <p class="packName">Nom pack</p>
                                 </div>
-                                <div class="packShowcase">
-                                    <img src="./assets/images/screen.jpg" alt="1" class="screenshotShowcase" />
-                                    <p class="packName">Nom pack</p>
-                                </div>
                             </div>
 
                         </div>
@@ -75,10 +72,10 @@
 
                     <div class="card">
                         <div class="card-block">
-                            <h2>Réseaux Sociaux</h2>
+                            <h2>Mes tarifs</h2>
                             <div class="row">
-                                <div class="col-md-3">
-                                    <p class="social-buttons"><a href="https://twitter.com/likorrne" title="Likorrne" target="_blank"><span class="social-round-icon fa-icon"><i class="fa fa-twitter"></i></span>@likorrne</a></p>
+                                <div class="tarifs">
+                                    <p>todo</p>
                                 </div>
                             </div>
                         </div>
@@ -86,28 +83,16 @@
 
                     <div class="card">
                         <div class="card-block">
-                            <h2>Contact</h2>
-                            <form action="" class="reveal-content">
-                                <div class="form-group">
-                                    <input type="email" class="form-control" id="email" placeholder="Email">
+                            <h2>Passer une commande</h2>
+                            <div class="row">
+                                <div class="RS">
+                                    <p class="social-buttons"><a href="https://twitter.com/likorrne" title="Likorrne" target="_blank"><span class="social-round-icon fa-icon"><i class="fa fa-twitter"></i></span>@likorrne</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        <span class="social-round-icon fa-icon"><i class="fab fa-discord"></i></span>Likorrne#8294&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        <span class="social-round-icon fa-icon"><i class="fa fa-telegram"></i></span>Telegram</p>
                                 </div>
-                                <div class="form-group">
-                                    <input type="text" class="form-control" id="subject" placeholder="Objet">
-                                </div>
-                                <div class="form-group">
-                                    <textarea class="form-control" rows="5" placeholder="Message"></textarea>
-                                </div>
-                                <div class="form-group">
-                                    <button type="submit" class=" btn btn-primary">Envoyer Message</button>
-                                </div>
-                            </form>
+                            </div>
                         </div>
                     </div>
-
-                </div>
-            </div>
-        </div>
-
     </main>
     <footer class="footer-container white-text-container text-center">
         <div class="container">
@@ -146,6 +131,7 @@
     <script type="text/javascript" src="./assets/js/jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="./assets/js/owl.carousel.js"></script>
     <script type="text/javascript" src="./assets/js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="./assets/js/fontawesome.js"></script>
     <script>
         $(document).ready(function() {
             $(".owl-carousel").owlCarousel({
@@ -153,6 +139,17 @@
                 loop: true,
                 margin: 10,
                 autoHeight: true,
+                autoplay: true,
+                autoplayTimeout: 3500,
+                autoplayHoverPause: true
+            });
+            owl.on('mousewheel', '.owl-stage', function(e) {
+                if (e.deltaY > 0) {
+                    owl.trigger('next.owl');
+                } else {
+                    owl.trigger('prev.owl');
+                }
+                e.preventDefault();
             });
         });
     </script>

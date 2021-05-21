@@ -5778,3 +5778,8 @@ p.packName {
     text-align: center;
     font-size: 20px;
 }
+
+div.RS {
+    display: grid;
+    place-content: center;
+}
