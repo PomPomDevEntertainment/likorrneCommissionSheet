@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+#title {
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-top: 100px;
+}
+
+.hover-table-layout {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+figure.image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+figure.image {
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+figure.image figcaption {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+}
+
+figcaption .caption {
+    position: relative;
+    top: 50%;
+    -moz-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+figcaption h1 {
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+figcaption p {
+    color: white;
+    font-size: 12px;
+}
+
+.listing h4 {
+    font-size: 13px;
+    text-align: center;
+    padding: 5px 10px;
+    font-weight: bold;
+}
+
+.listing h4:not(:last-child) {
+    border-bottom: 1px solid #ccc;
+}
+
+.listing-item:hover figure.image figcaption {
+    background: linear-gradient( 90deg, rgba(247, 152, 28, 0.4) 0px, rgba(247, 107, 28, 0.4));
+}
+
+@media only screen and (min-width:540px) {
+    .listing-item {
+        display: block;
+        width: -webkit-calc(91%/3);
+        width: -moz-calc(91%/3);
+        width: calc(91%/3);
+        margin: 10px 10px 10px 10px;
+    }
+}
